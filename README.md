@@ -19,3 +19,16 @@ Directory | Override env var | Used for flag
 /var/lib/transmission/downloads | download_dir | --download-dir
 /var/lib/transmission/watch | watch_dir | --watch-dir
 /var/run/transmission | rundir| --pid-file
+
+##### Example usage
+`
+$ docker run \
+    -v ./data:/opt/td-data -e config_dir=/opt/td-data/config \
+    -e download_dir=/opt/td-data/mydownloads -e watch_dir=/opt/td-data/watch\
+    -p 9090:9090 \
+    zbi192/docker-alpine-transmission \
+        --auth \
+        --username foo \
+        --password bar \
+        --port 9090
+`        
