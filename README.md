@@ -32,5 +32,5 @@ $ docker run \
         --auth \
         --username foo \
         --password bar \
-        --port 9091
+        --port 9090
 ```     
