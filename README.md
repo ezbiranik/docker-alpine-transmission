@@ -11,24 +11,22 @@ For a list of all available options, please run docker run --rm zbi192/docker-al
 
 The `--foreground` flag is set automatically by the startup script in order to prevent the process from running as a deamon.
 
-Besides, the following default directories are created and used automatically if `--config-dir` is not set and `settings.json` file is not present there:
+#### Environment variables
 
-Directory | Override env var | Used for flag
-----------|------------------|--------------
-/var/lib/transmission/config | config_dir | --config-dir
-/var/lib/transmission/downloads | download_dir | --download-dir
-/var/lib/transmission/watch | watch_dir | --watch-dir
-/var/run/transmission | rundir| --pid-file
+`TRANSMISSION_OPTIONS` - command line arguments passed to transmission-daemon (can include --config-dir, --watch-dir, etc...).
+`CONFIG_DIR` - Where to look for configuration files
+`DOWNLOAD_DIR` - Where to save downloaded data
+`WATCH_DIR` - Where to watch for new .torrent files
 
 ##### Example usage
 ```
 $ docker run \
-    -v ./data:/opt/td-data -e config_dir=/opt/td-data/config \
-    -e download_dir=/opt/td-data/mydownloads -e watch_dir=/opt/td-data/watch\
+    -v /data:/opt/td-data -e CONFIG_DIR=/opt/td-data/config \
+    -e DOWNLOAD_DIR=/opt/td-data/downloads -e WATCH_DIR=/opt/td-data/watch\
     -p 9090:9090 \
     zbi192/docker-alpine-transmission \
         --auth \
         --username foo \
         --password bar \
-        --port 9090
+        --port 9091
 ```     
