@@ -14,9 +14,13 @@ The `--foreground` flag is set automatically by the startup script in order to p
 #### Environment variables
 
 `TRANSMISSION_OPTIONS` - command line arguments passed to transmission-daemon (can include --config-dir, --watch-dir, etc...).
+
 `CONFIG_DIR` - Where to look for configuration files
+
 `DOWNLOAD_DIR` - Where to save downloaded data
+
 `WATCH_DIR` - Where to watch for new .torrent files
+
 
 ##### Example usage
 ```
