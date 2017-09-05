@@ -21,7 +21,7 @@ Directory | Override env var | Used for flag
 /var/run/transmission | rundir| --pid-file
 
 ##### Example usage
-`
+```
 $ docker run \
     -v ./data:/opt/td-data -e config_dir=/opt/td-data/config \
     -e download_dir=/opt/td-data/mydownloads -e watch_dir=/opt/td-data/watch\
@@ -31,4 +31,4 @@ $ docker run \
         --username foo \
         --password bar \
         --port 9090
-`        
+```     
