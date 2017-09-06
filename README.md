@@ -7,7 +7,7 @@ Original idea taken from https://github.com/antoineco/transmission-daemon-docker
 
 Transmission daemon can be configured at run time using configuration flags, which can be passed either directly as the container command or via the `TRANSMISSION_OPTIONS` environment variable.
 
-For a list of all available options, please run docker run --rm ezbiranik/docker-alpine-transmission -h or check the [project documentation](https://trac.transmissionbt.com/).
+For a list of all available options, please run `docker run --rm ezbiranik/docker-alpine-transmission -h` or check the [project documentation](https://trac.transmissionbt.com/).
 
 The `--foreground` flag is set automatically by the startup script in order to prevent the process from running as a deamon.
 
