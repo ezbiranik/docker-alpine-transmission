@@ -28,7 +28,7 @@ $ docker run \
     -v /data:/opt/td-data -e CONFIG_DIR=/opt/td-data/config \
     -e DOWNLOAD_DIR=/opt/td-data/downloads -e WATCH_DIR=/opt/td-data/watch\
     -p 9090:9090 \
-    zbi192/docker-alpine-transmission \
+    ezbiranik/docker-alpine-transmission \
         --auth \
         --username foo \
         --password bar \
