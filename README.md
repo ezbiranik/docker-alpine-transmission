@@ -1,6 +1,6 @@
 # docker-alpine-transmission
 
-[![Docker Automated build](https://img.shields.io/docker/automated//ezbiranik/docker-alpine-transmission.svg?maxAge=2592000)](https://hub.docker.com/r/ezbiranik/docker-alpine-transmission/)
+[![Docker Automated build](https://img.shields.io/docker/automated/ezbiranik/docker-alpine-transmission.svg?maxAge=2592000)](https://hub.docker.com/r/ezbiranik/docker-alpine-transmission/)
 
 Docker image based on Alpine Linux with transmission-daemon
 
