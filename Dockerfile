@@ -1,11 +1,11 @@
 # AlpineLinux with transmission-daemon
-FROM alpine:3.7
+FROM alpine:3.8
 
 MAINTAINER Eugene Zbiranik <ezbiranik@gmail.com>
 
 ENV LANG en_US.UTF-8
 
-ENV TD_VERSION 2.92-r8
+ENV TD_VERSION 2.94-r0
 
 # transmission-daemon runs with UID=1000
 RUN adduser -u 1000 -h /var/lib/transmission -s /sbin/nologin -H -D transmission
